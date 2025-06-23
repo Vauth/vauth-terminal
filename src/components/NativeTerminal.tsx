@@ -38,6 +38,7 @@ const NativeTerminal: React.FC = () => {
       { name: 'downloads', type: 'directory', modified: new Date('2025-01-13'), permissions: 'drwxr-xr-x' },
       { name: '.bashrc', type: 'file', size: 3423, modified: new Date('2025-01-10'), permissions: '-rw-r--r--' },
       { name: 'README.md', type: 'file', size: 1024, modified: new Date('2025-01-12'), permissions: '-rw-r--r--' },
+      { name: 'source-code.txt', type: 'file', size: 1024, modified: new Date('2025-08-23'), permissions: '-rw-r--r--' },
       { name: 'mail.txt', type: 'file', size: 1024, modified: new Date('2025-05-01'), permissions: '-rw-r--r--' },
       { name: 'pypi.whl', type: 'file', size: 1024, modified: new Date('2025-03-03'), permissions: '-rw-r--r--' },
       { name: 'config.py', type: 'file', size: 1024, modified: new Date('1984-08-09'), permissions: '-rw-r--r--' },
@@ -245,6 +246,8 @@ HISTFILESIZE=2000`);
                 addLine('output', `odium@disroot.org`);
             } else if (filename === 'pypi.whl') {
                 addLine('output', `https://pypi.org/user/ivuxy`);
+            } else if (filename === 'source-code.txt') {
+                addLine('output', `https://github.com/vauth/vauth-terminal`);
             } else if (filename === 'config.py') {
                 addLine('output', `class Production(Config): LOGGER = True`);
             } else if (filename === 'notes.txt') {
