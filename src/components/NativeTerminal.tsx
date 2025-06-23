@@ -593,7 +593,7 @@ tmpfs           16777216      1234  16775982   1% /run`);
                     value={currentInput}
                     onChange={(e) => setCurrentInput(e.target.value)}
                     onKeyDown={handleKeyDown}
-                    className="absolute left-0 top-0 bg-transparent border-none outline-none text-transparent font-mono text-base caret-transparent w-full"
+                    className="absolute bg-transparent border-none outline-none font-mono text-base w-full"
                     style={{ width: `${Math.max(1, currentInput.length + 1)}ch` }}
                     autoFocus
                     spellCheck={false}
@@ -601,12 +601,6 @@ tmpfs           16777216      1234  16775982   1% /run`);
                     autoCapitalize="off"
                     autoCorrect="off"
                   />
-                  <span 
-                    className={`font-mono text-white ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-75`}
-                    style={{ marginLeft: '1px' }}
-                  >
-                    |
-                  </span>
                 </div>
               </div>
             </div>
