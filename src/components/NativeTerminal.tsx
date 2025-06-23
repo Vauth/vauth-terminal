@@ -374,6 +374,10 @@ tmpfs           16777216      1234  16775982   1% /run`);
 ├── downloads/
 │   ├── ubuntu-22.04.iso
 │   └── node-v18.tar.gz
+├── pypi.whl
+├── config.py
+├── mail.txt
+├── source-code.txt
 ├── .bashrc
 └── README.md
 
