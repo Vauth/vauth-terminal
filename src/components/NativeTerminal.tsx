@@ -38,6 +38,9 @@ const NativeTerminal: React.FC = () => {
       { name: 'downloads', type: 'directory', modified: new Date('2025-01-13'), permissions: 'drwxr-xr-x' },
       { name: '.bashrc', type: 'file', size: 3423, modified: new Date('2025-01-10'), permissions: '-rw-r--r--' },
       { name: 'README.md', type: 'file', size: 1024, modified: new Date('2025-01-12'), permissions: '-rw-r--r--' },
+      { name: 'mail.txt', type: 'file', size: 1024, modified: new Date('2025-05-01'), permissions: '-rw-r--r--' },
+      { name: 'pypi.whl', type: 'file', size: 1024, modified: new Date('2025-03-03'), permissions: '-rw-r--r--' },
+      { name: 'config.py', type: 'file', size: 1024, modified: new Date('1984-08-09'), permissions: '-rw-r--r--' },
     ],
     '/home/vauth/projects': [
       { name: 'web-app', type: 'directory', modified: new Date('2025-01-15'), permissions: 'drwxr-xr-x' },
@@ -238,6 +241,12 @@ HISTSIZE=1000
 HISTFILESIZE=2000`);
             } else if (filename === 'README.md') {
               addLine('output', `PyGeek, GUI, Web development, Automation, ML, Data integration, BB & etc.`);
+            } else if (filename === 'mail.txt') {
+                addLine('output', `odium@disroot.org`);
+            } else if (filename === 'pypi.whl') {
+                addLine('output', `https://pypi.org/user/ivuxy`);
+            } else if (filename === 'config.py') {
+                addLine('output', `class Production(Config): LOGGER = True`);
             } else if (filename === 'notes.txt') {
               addLine('output', `Stay focused on OWASP & Web Security`);
             } else {
